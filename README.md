@@ -48,6 +48,9 @@ GET OFD/api/?secret=yourSecret
 - Go to `OFD/passwd` and change your password
 - Go to `OFD/secret` and change your API secret
 
+#### Default values
+- Password: `heslo`
+- Secret: `secret`
 ## Author
 
 - [@Will-Bee](https://github.com/Will-Bee)
