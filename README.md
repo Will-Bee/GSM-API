@@ -1,5 +1,6 @@
 # GSM-API
 
+## Usage
 - Send SMS to a custom number without recompiling the whole project
 - I used this in my project when I designed my own device looking for optic fiber cable
     - OFD stands for Optic Fiber Detector
