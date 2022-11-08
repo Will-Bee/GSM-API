@@ -30,7 +30,7 @@ GET OFD/api/?secret=yourSecret
 #### Api response
 
 ```json
-{"number":"+999123456789","text":"Your custom text goes here}
+{"number":"+999123456789","text":"Your custom text goes here"}
 ```
 
 
