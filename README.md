@@ -1,4 +1,4 @@
-# GSM-API
+# OFD-API
 
 ## Usage
 - Send SMS to a custom number without recompiling the whole project
