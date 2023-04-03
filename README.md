@@ -51,7 +51,7 @@ GET OFD/api/?secret=yourSecret
 
 #### Default values
 - Password: `heslo`
-- Secret: `secret`
+- Secret: `fairytales`
 ## Author
 
 - [@Will-Bee](https://github.com/Will-Bee)
