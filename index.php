@@ -11,9 +11,9 @@
 
     <form action="index.php" method="post" autocomplete="off">
 
-        <input type="text" name="number" placeholder="Number"> <br>
+        <input type="text" name="URL" placeholder="URL"> <br>
 
-        <input type="text" name="text" placeholder="Text"> <br>
+        <input type="text" name="text" placeholder="note"> <br>
 
         <input type="password" name="password" placeholder="Password"> <br>
 
@@ -76,7 +76,7 @@ $password = $passHash['password'];
 if (isset($_POST['submit'])) {
 
     // Extract data from post request
-    $number = $_POST['number'];
+    $URL = $_POST['URL'];
     $text = $_POST['text'];
     $_password = $_POST['password'];
 
@@ -87,11 +87,11 @@ if (isset($_POST['submit'])) {
 
 
 
-        //? write number and text into api/data.json in json format, log changes
+        //? write URL and text into api/data.json in json format, log changes
 
         // create array with data, convert to json and write to file api/var/data.json
         $data = array(
-            'number' => $number,
+            'URL' => $URL,
             'text' => $text
         );
 
@@ -107,7 +107,7 @@ if (isset($_POST['submit'])) {
         $ip = getUserIP();
         $date = date('d/m/Y H:i:s');
 
-        $data = "CHANGE!: Date: $date | IP Address> $ip | Changed to -> Number: $number Text: $text \n";
+        $data = "CHANGE!: Date: $date | IP Address> $ip | Changed to -> URL: $URL Text: $text \n";
 
         file_put_contents('var/log.txt', $data, FILE_APPEND);
 

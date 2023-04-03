@@ -39,14 +39,14 @@ function getUserIP()
 
 function apiResponse()
 {
-    // read data.json in variables $number and $text
+    // read data.json in variables $URL and $text
     $data = json_decode(file_get_contents('../var/data.json'), true);
-    $number = $data['number'];
+    $URL = $data['URL'];
     $text = $data['text'];
 
     // create array with data
     $data = array(
-        'number' => $number,
+        'URL' => $URL,
         'text' => $text
     );
 
@@ -57,11 +57,11 @@ function apiResponse()
 
     // log request
     $date = date('d/m/Y H:i:s');
-    $number = $data['number'];
+    $URL = $data['URL'];
     $text = $data['text'];
     $ip = getUserIP();
 
-    $data = "REQUEST: Date: $date | IP Address> $ip | Number: $number Text: $text \n";
+    $data = "REQUEST: Date: $date | IP Address> $ip | URL: $URL Text: $text \n";
 
     file_put_contents('../var/log.txt', $data, FILE_APPEND);
 }
