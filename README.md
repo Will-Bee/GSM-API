@@ -1,7 +1,7 @@
 # OFD-API
 
 ## Usage
-- Send SMS to a custom number without recompiling the whole project
+- Send notifications to your webhook without recompiling the whole project
 - I used this in my project when I designed my own device looking for optic fiber cable
     - OFD stands for Optic Fiber Detector
 
@@ -31,7 +31,7 @@ GET OFD/api/?secret=yourSecret
 #### Api response
 
 ```json
-{"number":"+999123456789","text":"Your custom text goes here"}
+{"URL":"https://your.url/of/webhook","text":"Your notes go here"}
 ```
 
 
