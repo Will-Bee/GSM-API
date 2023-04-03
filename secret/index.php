@@ -13,7 +13,7 @@
 
     <input type="password" name="passwordNew" placeholder="New secret"> <br>
 
-        <input type="password" name="password" placeholder="Old password"> <br>
+        <input type="password" name="password" placeholder="Password"> <br>
 
         <input type= "submit" name="submit" value="Submit!">
 
